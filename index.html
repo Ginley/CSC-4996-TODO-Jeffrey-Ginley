@@ -1,0 +1,39 @@
+<style>
+	input{
+		margin: 10px;
+	}
+</style>
+<html>
+	<head>
+		<title>CSC 4996 TODO</title>
+	</head>
+	<body> 
+		<h1 style="text-align: center;">CSC 4996 TODO Application</h1>
+		
+		<h2>Insert a new task</h2>
+		<form action="insert.php" method="post">
+			
+			<label for="name">Name</label>
+			<input id="name" type="text" name="Name" /><br />
+			
+			<label for="description">Description of task</label>
+			<input id="description" type="text" name="Description" /><br />
+			
+			<button type="submit">CREATE TASK</button>
+		</form>
+
+		<h2>Delete Task by Name</h2>
+		<form action="delete.php" method="post">
+			<label for="name">Name</label>
+			<input id="name" type="text" name="Name" /><br />
+			
+			<button type="submit">DELETE TASK</button>
+		</form>
+		
+		<h2>Show Tasks</h2>
+		<form action="get.php" method="post">
+			<button type="submit">SEE TASKS</button>
+		</form>
+	
+	</body>
+</html>
